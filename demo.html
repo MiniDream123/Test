@@ -1,0 +1,32 @@
+<!doctype html><!--声明文档类型 html5 单标签-->
+<html lang="en"><!--html的开始标签 双标签 存放网页的所有内容 -->
+	<head><!--头部:存放网页上给浏览器或是搜索引擎看的信息 -->
+		<title>响应式布局</title><!--网页的名字 -->
+		<meta charset="utf-8"><!--网页的语言-->
+		<meta name="Keywords" content="content"><!--网页的关键字信息-->
+		<meta name="Description" content="content"><!--网页的简介-->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<style>
+			body{
+				margin:0;
+
+			}
+			.view{
+				width: 500px;
+				height: 500px;
+				background-color:red;
+				margin:100px auto;
+			}
+			/*媒体查询 当视口宽度大于700px 小于650px时，view元素的背景颜色变成蓝色*/
+			@media screen and (min-width:650px) and (max-width:700px){
+				.view{
+					background-color:blue;
+				}
+			}
+			
+		</style>
+	</head>
+	<body><!--身体:存放用户在网页上能看的得所有内容 -->
+		<div class="view"></div>
+	<body>
+</html><!--html的结束标签 -->
